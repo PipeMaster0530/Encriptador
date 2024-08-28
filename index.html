@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="shortcut icon" href="images/logo_alura.svg" type="image/x-icon">
+	<link hrel="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;500&family=Inter:wght@400;700&display=swap" 
+	rel="stylesheet"
+	<title><span>Encriptador de Texto</title></span>
+</head>
+<body class="body">
+
+	<div class="container ">
+		<div class="row lg-10">
+			<div class="container full d-column">
+				<div class="row xs-20 lg-100">
+					<header class="header">
+						<img src="images/logo_alura.svg" alt="Logo del proyecto Encriptador">
+					</header>
+				</div>
+			</div>
+
+		</div>
+		<div class="row lg-55">
+			<main class="main">
+				<section class="user-entry">
+					<textarea placeholder="Ingresa el texto aquí" autofocus class="user-text" id="textarea-text"></textarea>
+					<div class="user-notice">
+						<img src="images/bi_exclamation-circle-fill.svg" alt="Icono exclamación">
+						<span class="user-notice_content">Por favor, Sólo letras minúsculas y sin acentos</span>
+					</div>
+					<div class="buttons-container">
+						<button class="btn main-btn encrypt" id="btn-encrypt">Encriptar</button>
+						<button class="btn light-btn decrypt" id="btn-decrypt">Desencriptar</button>
+					</div>
+				</section>
+			</main>
+		</div>
+		<div class="row lg-35">
+			<section class="output">
+				<div class="output-frame" id="output-frame">
+					<div class="output-empty is-visible" id="empty">
+						<img src="images/encrypter_02.svg" alt="Imagen mensaje no encontrado" class="output-empty_image">
+						<p class="output-empty_title align-center">Ningún mensaje fue encontrado</p>
+						<p class="output-empty_text align-center">Ingresa el mensaje que deseas encriptar o desencriptar</p>
+					</div>
+					<div class="output-success" id="success">
+						<textarea class="output-success_content" id="textarea-success"></textarea>
+						<button class="btn light-btn output-success_btn tooltip" id="btn-copy">Copiar
+							<span class="tooltip-box tooltip-hiden" id="tooltip-box">Texto copiado</span>
+						</button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="scripts.js"></script>
+</body>
+</html>
